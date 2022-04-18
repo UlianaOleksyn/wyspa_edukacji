@@ -4,15 +4,28 @@
     padding: 0;
 }
 
-.content{
-    width: 1200px;
-}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
 
 body{
     font-family: 'Monda', sans-serif;
+    background: url("../image/courses/courses_bg1.png") center (center/auto);
 }
 
-@import "bloks/header";
+.container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0px;
+
+}
+
+@import "blocks/main";
+@import "blocks/about-us";
+@import "blocks/work";
+@import "blocks/headers";
+@import "blocks/button";
+@import "blocks/courses";
+@import "blocks/contact";
+@import "blocks/footer";

@@ -1,0 +1,114 @@
+.main{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    &__link{
+        position: absolute;
+        left: 90px;
+        top: 0;
+    }
+    &__logo{
+        &_txt{
+            height: 45px;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100px;
+        }
+        &_img{
+            height: 75px;
+            width: auto;
+        }
+    }
+    &__nav{
+        position: absolute;
+        right: 60px;
+        height: 75px;
+        &_links{
+          display: flex;
+          height: inherit;
+        }
+        &_link{
+            width: 180px;
+            height: inherit;
+            border-left: 1px dashed #423f3d; 
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &-active{
+                background-color: rgba(7, 28, 55, 0.98);
+                border-left: 1px dashed white;
+            }
+            &:last-child{
+                border-right: 1px dashed #423f3d;
+            }
+            &:hover{
+                background-color: rgb(36, 42, 50);
+                transition: 1 all;
+            }
+            a{
+                padding-top: 25px;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                height: inherit;
+                width: inherit;
+                position: absolute;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        &_dropdown{
+            position: relative;
+        }
+    }
+    &__dropdown{
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: 170px;
+        z-index: 10;
+        &_dsp-block{
+            display: block;
+        }
+        &_items{
+            list-style: none;
+            width: 200px;
+            height: 200px; 
+            background-color: rgba(7, 28, 55, 0.98);
+            box-shadow: 0 0 20px rgba(0,0,0,.5);
+            border-radius: 7px;
+        }
+        &_item{
+            position: relative;
+            height: 50px;
+            width: inherit;
+            // border-bottom: 0.5px dashed white;
+            // &:last-child{
+            //     border-bottom: none;
+            // }
+            &:hover{
+                background-color: rgba(22, 45, 72, 0.98);
+                border-radius: 7px;
+            }
+            a{
+                position: absolute;
+                height: 50px;
+                width: inherit;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 15px;
+            }
+        }
+    }
+}

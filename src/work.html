@@ -6,20 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wyspa Edukacji</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.min.css">
+ </head>
 <body>
-    <header>
-     <a class="logo-link" href="index.html"><img class="logo-img" src="icons/logo.png"> </a> 
-     <nav>
-        <ul>
-           <li><a href="index.html">O nas</a></li>
-           <li><a href="courses.html">Kursy</a></li>
-           <li><a href="parents.html">Zakątek rodzica</a></li>
-           <li><a href="work.html">Praca</a></li>
-           <li><a href="#">Kontakt</a></li>
-       </ul>
-    </nav>
+    <script src="js/script.js"></script>
+    <header class="main">
+        <nav class="main__nav">
+            <ul class="main__nav_links">
+               <li class="main__nav_link"><a href="index.html" class="main__nav_link-active">O nas</a></li>
+               <li class="main__nav_link main__nav_dropdown"><a href="#">Kursy</a></li>
+               <div class="main__dropdown">
+                   <ul class="main__dropdown_items">
+                       <li class="main__dropdown_item"><a href="courses_private-lessons.html">Korepetycje</a></li>
+                       <li class="main__dropdown_item"><a href="courses_matura.html">Kursy maturalne</a></li>
+                       <li class="main__dropdown_item"><a href="courses_8class.html">Dla 8 klasisty</a></li>
+                       <li class="main__dropdown_item"><a href="courses_home-lessons.html">Edukacja domowa</a></li>
+                   </ul>
+               </div>
+               <li class="main__nav_link"><a href="parents.html">Zakątek rodzica</a></li>
+               <li class="main__nav_link"><a href="work.html">Praca</a></li>
+               <li class="main__nav_link main__nav_link-contact"><a href="#">Kontakt</a></li>
+           </ul>
+        </nav>
+        <a class="main__link" href="index.html"><img class="main__logo main__logo_txt" src="icons/logo_txt.png" alt="logo-txt"><img class="main__logo main__logo_img" src="icons/logo.png" alt="logo-img"> </a> 
     </header>
+    <div class="work-wrapper">
+        <div class="container">
+            <section class="work">
+                <div class="subheader-main work__subheader">
+                    Szukasz poważnej pracy, w której możesz się rozwijać i połączyć ze studiami?
+                </div>
+                <h2 class="header-main work__header">
+                    ZOSTAŃ PROFESJONALNYM KOREPETYTOREM
+                </h2>
+                <div class="work__descr">
+                    Poszukujemy do naszego oddziału osób do prowadzenia zajęć stacjonarnych oraz online. Przyjazna atmosfera w pracy, nastawienie na rozwój własny oraz naszych współpracowników to coś za co nasi współpracownicy cenią nas najbardziej. Bardzo dbamy, aby każda pracująca z nami osoba mogła rozwijać się i realizować swoje własne cele zawodowe oraz osobiste. Pomaganie naszym uczniom w zdobywaniu wiedzy oraz dzielenie się z nimi pasją do nauki, to to co nas napędza do działania.
+                </div>
+            </section>
+            <section class="work-options">
+                <div class="header work-options__header">
+                    Aplikuj już dziś 
+                </div>
+                <div class="work-options__items">
+                    <div class="work-options__item">
+                        <div class="work-options__item_header">JĘZYKI OBCE</div>
+                        <div class="work-options__item_descr">Angielski, niemiecki, włoski czy hiszpański? Jeżeli dobrze posługujesz się jakimkolwiek językiem zgłoś się do nas i pomóż innym odkrywać obce kultury. Spraw aby językowe bariery nie stanowiły dla innych problemu. </div>
+                    </div>
+                    <div class="work-options__item">
+                        <div class="work-options__item_header">PRZEDMIOTY HUMANISTYCZNE</div>
+                        <div class="work-options__item_descr">Wszystkie trudne polskie słowa masz w małym paluszku i z pamięci wymieniasz władców Polski w kolejności chronologicznej? Chcesz dzielić się tą wiedzą z innymi? Nauczaj z nami języka polskiego, historii lub WOS-u!</div>
+                    </div>
+                    <div class="work-options__item">
+                        <div class="work-options__item_header">PRZEDMIOTY ŚCISŁE</div>
+                        <div class="work-options__item_descr">Nie straszne Ci skomplikowane matematyczne wyliczenia, a E=mc<sup>2</sup> jest Twoim ulubionym wzorem? Potrafisz łatwo wytłumaczyć ścisłą wiedzę drugiej osobie? Zostań profesjonalnym korepetytorem matematyki, fizyki, chemii czy też biologii.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-preference">
+                <div class="header work-preference__header">CO ZYSKASZ?</div>
+                <div class="work-preference__wrapper">
+                    <ul class="work-preference__descr">
+                        <li class="work-preference__descr_item"> <img class="work-preference__descr_icon" src="icons/work-preference/time.png" alt="time-icon"> Elastyczne godziny pracy pomiędzy 9.00 a 21.00</li>
+                        <li class="work-preference__descr_item"> <img class="work-preference__descr_icon" src="icons/work-preference/materials.png" alt="material-icon">Zawsze gotowe materiały do zajęć</li>
+                        <li class="work-preference__descr_item"><img class="work-preference__descr_icon" src="icons/work-preference/learn.png" alt="learn-icon">Szkolenia metodyczne</li>
+                        <li class="work-preference__descr_item"><img class="work-preference__descr_icon" src="icons/work-preference/support.png" alt="support-icon">Opiekę mentora</li>
+                        <li class="work-preference__descr_item"><img class="work-preference__descr_icon" src="icons/work-preference/legal.png" alt="legal-icon">Legalne zatrudnienie</li>
+                        <li class="work-preference__descr_item"><img class="work-preference__descr_icon" src="icons/work-preference/reference.png" alt="referense-icon">Referencje</li>
+                    </ul>
+                    <div class="work-preference__img">
+                        <img src="image/work-profit1.png" alt="work-profit">
+                    </div>
+                </div>
+            </section>
+            <section class="work-form">
+                <div class="header work-form__header">REKRUTACJA </div>
+                <form class="work-form__wrapper">
+                    <div class="work-form__wrapper_column">
+                        <input required type="text" id="name-work" name="name" placeholder="Imię i nazwisko"><br>
+                        <input required type="email" id="mail-work" name="mail" placeholder="Email"><br>
+                        <input required type="tel" id="phone-work" name="pfone" placeholder="Telefon"><br>
+                        <input type="file" id="cv-work" name="CV"><br>
+                    </div>
+                    <div class="work-form__column">
+                        <textarea required name="massage" id="message-work"  placeholder="Napisz wiadomość..."></textarea><br>
+                    </div>
+                    <input class="button" type="submit" value="Wyślij">
+                </form>
+            </section>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="contact__overflow">
+             <div class="contact__modal">
+                 <div class="contact__modal_close">X</div>
+                 <div class="contact__info">
+                     <div class="contact__info_column">
+                         <div class="contact__info_descr contact__tel">
+                             <a href="tel:+48660501864">
+                                 <img src="icons/telephone.png" alt="phone-icon" class="contact__info_icon contact__tel_icon">
+                                 <div class="contact__info_txt contact__tel_number">+48 660 501 864</div>
+                             </a>
+                         </div>
+                         <div class="contact__info_descr contact__mail">
+                             <a href="mailto:wyspaedukacji.korepetycje@gmail.com">
+                                 <img src="icons/email.png" alt="email-icon" class="contact__info_icon contact__mail_icon">
+                                 <div class="contact__info_txt contact__mail_txt">wyspaedukacji.korepetycje@gmail.com</div>
+                             </a>
+                         </div>
+                     </div>
+                     <div class="contact__info_column-social">
+                         <div class="contact__info_descr contact__social">
+                             <a href="https://www.facebook.com/Wyspa.Edukacji">
+                                 <img src="icons/facebook.png" alt="facebook-icon" class="contact__info_icon contact__social_icon">
+                             </a>
+                         </div>
+                         <div class="contact__info_descr contact__social">
+                             <a href="#">
+                                 <img src="icons/instagram.png" alt="instagram-icon" class="contact__info_icon contact__social_icon">
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="header contact__header">napisz wiadomość</div>
+                 <!-- <div class="subheader contact__subheader">a wkrotce skontaktujemy sie z Tobą</div> -->
+                 <form class="contact__wrapper">
+                     <div class="contact__wrapper_columns">
+                         <input type="text" id="name1" name="name" placeholder="Imię i nazwisko" required><br>
+                         <input type="email" id="mail1" name="mail" placeholder="Email" required><br>
+                         <input type="tel" id="phone1" name="pfone" placeholder="Telefon" required><br>
+                         <input class="button" type="submit" value="Wyślij">
+                     </div>
+                     <div class="contact__wrapper_columns">
+                         <textarea name="massage" id="message1" required placeholder="Napisz wiadomość..."></textarea><br>
+                     </div>
+                 </form>
+             </div>
+         </div>
+    </section>
+    <footer class="footer">
+        <ul class="footer__links">
+            <li class="footer__link"><a href="#" class="footer__link_item">Regulamin</a></li>
+            <li class="footer__link"><a href="#" class="footer__link_item">Polityka prywatności</a></li>
+        </ul>
+        <div class="footer__logo">
+            <a href="index.html" class="footer__logo_imgs">
+                <img src="icons/logo.png" alt="logo" class="footer__logo_icon">
+                <img src="icons/logo_txt.png" alt="logo" class="footer__logo_txt">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
