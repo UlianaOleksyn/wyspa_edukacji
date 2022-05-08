@@ -1,12 +1,12 @@
 .header-main{
-    color: #627994;
-    text-shadow:  2px 2px white, 2px 2px 12px  #123867, -2px -2px 1px black;
+    color: #133761;
+    text-shadow:  2px 1px rgb(223, 221, 221), -2px -1px rgb(16, 8, 8);
     font-size: 42px;
     font-weight: 700;
     text-align: center;
 }
 .subheader-main{
-    color: #123867;
+    color: #224d82;
     text-shadow: 1px 1px 2px white, -2px -2px 3px #123867;
     font-size: 32px;
     font-weight: 700;
@@ -14,11 +14,11 @@
 }
 .header{
     color: gray;
-    text-shadow: 2px 2px white, -2px -2px #123867;
+    text-shadow: 1px 1px white, -1px -1px black;
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    padding: 70px 0 40px 0;
+    padding: 120px 0 70px 0;
     text-decoration: overline;
 }
 .subheader{

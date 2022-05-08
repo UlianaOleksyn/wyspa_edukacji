@@ -2,40 +2,40 @@
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const body = document.querySelector("body"),
-          link_dropdown = document.querySelector(".main__nav_dropdown"),
-          list_dropdown = document.querySelector(".main__dropdown"),
-          contact_link = document.querySelector(".main__nav_link-contact"),
+          linkDropdown = document.querySelector(".main__nav_dropdown"),
+          listDropdown = document.querySelector(".main__dropdown"),
+          contactLink = document.querySelector(".main__nav_link-contact"),
           contact = document.querySelector(".contact"),
-          contact_overflow = document.querySelector(".contact__overflow"),
-          contact_modal_close = document.querySelector(".contact__modal_close");
+          contactOverflow = document.querySelector(".contact__overflow"),
+          contactModalClose = document.querySelector(".contact__modal_close");
     function modalClose(){
         contact.classList.remove("contact__active");
     }
-    link_dropdown.addEventListener("mouseover", ()=>{
-        list_dropdown.classList.add("main__dropdown_dsp-block");
+    linkDropdown.addEventListener("mouseover", ()=>{
+        listDropdown.classList.add("main__dropdown_dsp-block");
     });
     body.addEventListener("click", (e)=>{
-        if (e.target != list_dropdown);
-        list_dropdown.classList.remove("main__dropdown_dsp-block");
+        if (e.target != listDropdown);
+        listDropdown.classList.remove("main__dropdown_dsp-block");
     });
-    link_dropdown.addEventListener("click", (e) =>{
+    linkDropdown.addEventListener("click", (e) =>{
         e.preventDefault;
-        link_dropdown.classList.toggle("main__dropdown_dsp-block");
+        linkDropdown.classList.toggle("main__dropdown_dsp-block");
     });
-    contact_link.addEventListener("click", () =>{
+    contactLink.addEventListener("click", () =>{
         contact.classList.add("contact__active");
     });
-    contact_overflow.addEventListener("click", (e)=>{
+    contactOverflow.addEventListener("click", (e)=>{
         if (e.target == contact_overflow){
             modalClose();
         };
     });
     document.addEventListener("keydown", (e) =>{
-        if (contact_overflow && e.code == "Escape"){
+        if (contactOverflow && e.code == "Escape"){
             modalClose();
         };
     });
-    contact_modal_close.addEventListener("click", () =>{
+    contactModalClose.addEventListener("click", () =>{
         modalClose();
     });
 

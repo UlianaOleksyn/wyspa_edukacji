@@ -18,7 +18,8 @@ body{
     width: 70%;
     margin: 0 auto;
     margin-top: 0px;
-
+    background: rgba(18, 56, 103, 0.90);
+    box-shadow: 10px 0px 20px #123867, -10px 0px 20px #123867;
 }
 
 @import "blocks/main";
